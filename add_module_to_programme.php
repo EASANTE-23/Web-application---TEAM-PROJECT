@@ -2,7 +2,7 @@
 session_start();
 include('db.php');
 
-// Check if staff is logged in
+
 if (!isset($_SESSION['staff_id'])) {
     header("Location: login.php");
     exit();
