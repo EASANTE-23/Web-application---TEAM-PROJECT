@@ -2,7 +2,7 @@
 session_start();
 include('db.php');
 
-// Check if the student is logged in
+
 if (!isset($_SESSION['student_id'])) {
     header('Location: login.php');
     exit();
@@ -10,7 +10,7 @@ if (!isset($_SESSION['student_id'])) {
 
 $student_id = $_SESSION['student_id'];
 
-// Fetch courses and teachers
+
 $sql = "SELECT p.ProgrammeName, m.ModuleName, s.Name as Teacher 
         FROM ProgrammeModules pm 
         JOIN Programmes p ON pm.ProgrammeID = p.ProgrammeID 
