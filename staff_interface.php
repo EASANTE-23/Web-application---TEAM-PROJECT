@@ -1,8 +1,7 @@
 <?php
 
-include('connect.php'); // Include the database connection
+include('connect.php'); 
 
-// Fetch all programmes and their associated modules
 $sql = "SELECT pi.StudentName, pi.Email, pr.ProgrammeName, m.ModuleName, s.Name AS ModuleLeader
         FROM InterestedStudents pi
         JOIN Programmes pr ON pi.ProgrammeID = pr.ProgrammeID
