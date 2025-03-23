@@ -1,13 +1,13 @@
-/* Home.css */
 
-/* General Reset */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -47,7 +47,7 @@ header #search-bar {
     border: none;
 }
 
-/* Navigation Styling */
+
 nav {
     background-color: #333;
     color: white;
@@ -88,13 +88,13 @@ nav .home-button:hover {
     background-color: #e05e50;
 }
 
-/* Main Content Styling */
+
 main {
     padding: 20px;
     min-height: 400px;
 }
 
-/* Footer Styling */
+
 footer {
     background-color: #333;
     color: white;
@@ -111,7 +111,7 @@ footer marquee {
     font-size: 16px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
